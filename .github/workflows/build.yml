@@ -15,5 +15,5 @@ jobs:
         allowUpdates: true
         artifacts: "release.zip"
         body: "Update"
-        tag: ${{ github.GITHUB_REF }}
+        commit: ${{ github.GITHUB_REF }}
         token: ${{ secrets.GITHUB_TOKEN }}
