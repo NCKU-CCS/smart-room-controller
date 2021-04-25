@@ -40,14 +40,19 @@ JSON string containing Python Dict object
 ### Prerequisites
 
 - python 3.7
-- pip3
+- pipenv
 
 ### Running Development
 
-Installing Packages & Running
+1. Installing Packages & Running
 ```sh
-pip3 install -r requirements.txt
-python3 controller.py
+pipenv install --dev
+pipvne run controller.py
+```
+
+2. (Optional) Version freeze to generate `requirements.txt`
+```sh=
+pipenv lock --requirements > requirements.txt
 ```
 
 ### Testing Command
