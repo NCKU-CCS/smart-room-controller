@@ -10,7 +10,7 @@ jobs:
     - name: Repository checkout
       uses: actions/checkout@v2
     - name: Build zipped release
-    - uses: ncipollo/release-action@v1
+      uses: ncipollo/release-action@v1
       with:
         allowUpdates: true
         artifact: "release.zip"
