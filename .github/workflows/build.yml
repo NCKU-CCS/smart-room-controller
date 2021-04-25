@@ -13,6 +13,7 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: true
-        artifact: "release.zip"
+        artifacts: "release.zip"
         body: "Update"
+        tag: ${{ github.GITHUB_REF }}
         token: ${{ secrets.GITHUB_TOKEN }}
