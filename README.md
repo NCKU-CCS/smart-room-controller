@@ -12,6 +12,15 @@ In our case, controller is running on a Raspberry Pi Zero W.
 
 Socket transfer data type in bytes, the data structure above need to transfer (or encode) to bytes.
 
+Available command set in `config.py`
+
++ cool mode: `16C` ~ `30C`
+    + (Room 602's AC cannot be set to 30 degrees, only 16 to 29)
++ fan mode: `fan`
++ turn off: `off`
+
+Note: AC acts according to the command, so there is no power-on command.
+
 ## IR Remote
 
 + [IR Config Files](./IR_config)
